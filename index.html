@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Talha Khalil | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f7fa;
+            color: #222;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1d3557;
+            padding: 18px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a8dadc;
+        }
+
+        /* Hero Section */
+        header {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #e9f1f7;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #1d3557;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            color: #457b9d;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            max-width: 750px;
+            font-size: 1.2rem;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #1d3557;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .button:hover {
+            background-color: #457b9d;
+        }
+
+        /* General Sections */
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #1d3557;
+            margin-bottom: 35px;
+        }
+
+        /* Skills */
+        #skills {
+            background-color: white;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: #e9f1f7;
+            padding: 12px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: #1d3557;
+        }
+
+        /* Projects */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            color: #1d3557;
+            margin-bottom: 12px;
+        }
+
+        .project p {
+            margin-bottom: 15px;
+        }
+
+        .project a {
+            color: #457b9d;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        /* About */
+        #about {
+            background-color: white;
+            text-align: center;
+        }
+
+        #about p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        /* Contact */
+        #contact {
+            text-align: center;
+        }
+
+        #contact a {
+            color: #1d3557;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile */
+        @media (max-width: 650px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            header h1 {
+                font-size: 2.3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Talha Khalil</h2>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Personal Statement -->
+    <header>
+        <h1>Talha Khalil</h1>
+
+        <h2>Accounting & Finance Student</h2>
+
+        <p>
+            I am an Accounting student with a concentration in Finance at
+            Rutgers University who is passionate about banking, financial
+            analysis, investing, and helping individuals make informed
+            financial decisions.
+        </p>
+
+        <a class="button" href="#projects">View My Projects</a>
+    </header>
+
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am pursuing a B.S. in Accounting with a concentration in Finance
+            at Rutgers University–New Brunswick. My professional experience
+            includes retail banking, tax preparation, financial transactions,
+            customer service, and business development. I am interested in
+            continuing to develop my skills in accounting, finance, banking,
+            and financial analysis.
+        </p>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">Microsoft Excel</div>
+
+            <div class="skill">Microsoft Office</div>
+
+            <div class="skill">Financial Analysis</div>
+
+            <div class="skill">Accounting</div>
+
+            <div class="skill">VITA Tax Preparation</div>
+
+            <div class="skill">Salesforce</div>
+
+            <div class="skill">Fiserv DNA</div>
+
+            <div class="skill">Java</div>
+
+            <div class="skill">Banking</div>
+
+            <div class="skill">English & Urdu</div>
+
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="projects-container">
+
+            <!-- Project 1 -->
+            <div class="project">
+
+                <h3>Financial Analysis Project</h3>
+
+                <p>
+                    Analyzed financial information and key business metrics
+                    to evaluate company performance and better understand
+                    financial decision-making.
+                </p>
+
+                <!-- Replace # with your project link -->
+                <a href="#">View Project →</a>
+
+            </div>
+
+
+            <!-- Project 2 -->
+            <div class="project">
+
+                <h3>VITA Tax Preparation</h3>
+
+                <p>
+                    Prepared and reviewed federal and state income tax returns
+                    through the IRS Volunteer Income Tax Assistance program
+                    while helping taxpayers identify eligible tax benefits.
+                </p>
+
+                <!-- Replace # with your project link -->
+                <a href="#">View Project →</a>
+
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="project">
+
+                <h3>Banking & Financial Services</h3>
+
+                <p>
+                    Applied financial and customer analysis in a retail banking
+                    environment to identify client needs and recommend
+                    appropriate banking and financial products.
+                </p>
+
+                <!-- Replace # with your project link -->
+                <a href="#">View Project →</a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            Interested in connecting? Feel free to reach out.
+        </p>
+
+        <br>
+
+        <p>
+            Email:
+            <a href="mailto:talhawkhalil@gmail.com">
+                talhawkhalil@gmail.com
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a
+                href="https://www.linkedin.com/in/talhawkhalil"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                linkedin.com/in/talhawkhalil
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Talha Khalil | Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
